@@ -5,3 +5,4 @@
 2. react
 3. typescript
 4. sass
+5. FSD
