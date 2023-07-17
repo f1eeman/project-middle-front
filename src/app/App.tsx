@@ -6,6 +6,7 @@ import {MainPage} from "pages/MainPage";
 import {useTheme} from "app/providers/theme";
 import {classNames} from "shared/lib";
 import {AppRouter} from "app/providers/router";
+import {Navbar} from "widgets/navbar";
 
 
 
@@ -14,8 +15,7 @@ const App = () => {
     return (
         <div className={classNames('app', {}, [theme])}>
             <button onClick={toggleTheme}>TOGGLE</button>
-            <Link to={'/'}>Главная</Link>
-            <Link to={'/about'}>О сайте</Link>
+          <Navbar />
           <AppRouter />
         </div>
     );
