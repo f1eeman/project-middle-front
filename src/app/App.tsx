@@ -5,6 +5,7 @@ import {classNames} from "shared/lib";
 import {AppRouter} from "app/providers/router";
 import {Navbar} from "widgets/navbar";
 import {ThemeSwitcher} from "shared/ui";
+import {Sidebar} from "widgets/Sidebar";
 
 
 
@@ -12,9 +13,11 @@ const App = () => {
    const { theme } = useTheme();
     return (
         <div className={classNames('app', {}, [theme])}>
-            <ThemeSwitcher />
           <Navbar />
-          <AppRouter />
+          <div className="content-page">
+            <Sidebar />
+            <AppRouter />
+          </div>
         </div>
     );
 };
