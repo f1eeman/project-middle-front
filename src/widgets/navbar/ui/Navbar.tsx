@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { classNames } from 'shared/lib';
 import { AppLink } from 'shared/ui';
 import cls from './Navbar.module.scss';
