@@ -33,6 +33,8 @@ export const Modal = (props: ModalProps) => {
     useEffect(() => {
         if (isOpen) {
             setIsMounted(true);
+        } else {
+            setIsMounted(false);
         }
     }, [isOpen]);
 
